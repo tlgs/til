@@ -1,0 +1,26 @@
+{{ define "title" }}{{ .Section }}/{{ .Title }} · {{ .Site.Title }}{{ end }}
+{{ define "description"}}Index of entries tagged with {{ .Title }}, ordered by publish date{{end}}
+
+{{ define "main" }}
+  <h1>entries tagged with <span class="tag">{{ .Title }}</span></h1>
+  <table class="listing">
+    <tbody>
+      {{ range .Pages }}
+        <tr>
+          <td>
+            {{ $t := .PublishDate | time.Format "2006-01-02" }}
+            <time datetime="{{ $t }}">{{ .PublishDate | time.Format "January 2, 2006" }}</time>
+          </td>
+          <td>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </td>
+          <td>
+            {{ range sort .Params.tags }}
+              <a href="{{ ($.Site.Taxonomies.tags.Get .).Page.RelPermalink }}">{{ . }}</a>
+            {{ end }}
+          </td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+{{ end }}

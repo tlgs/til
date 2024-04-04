@@ -1,0 +1,8 @@
+{{ define "description" }}Index of all tags, ordered alphabetically{{ end }}
+
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ range .Pages.ByTitle }}
+    <a href="{{ .RelPermalink }}" style="margin-right: .5rem;">{{ .Title }}</a>
+  {{ end }}
+{{ end }}

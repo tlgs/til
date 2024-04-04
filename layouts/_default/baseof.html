@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{ $base := resources.Get "base.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $base.RelPermalink }}" integrity="{{ $base.Data.Integrity }}">
+
+    <title>{{ block "title" . }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ block `description` . }}{{ .Description }}{{ end }}">
+  </head>
+
+  <body>
+    {{ block "main" . }}{{ end }}
+  </body>
+</html>

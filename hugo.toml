@@ -1,0 +1,11 @@
+baseURL = "https://til.tlgs.dev"
+title = "til.tlgs"
+
+capitalizeListTitles = false
+disableKinds = ["sitemap", "RSS"]
+
+[taxonomies]
+  tag = "tags"
+
+[frontmatter]
+  date = [":filename", ":default"]

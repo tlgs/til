@@ -1,0 +1,26 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "description" }}Personal collection of random things I've learned. By tlgs.{{ end }}
+
+{{ define "main" }}
+  <h1 id="home-heading">{{ .Title }}</h1>
+  <table class="listing">
+    <tbody>
+      {{- range .Pages }}
+        <tr>
+          <td>
+            {{ $t := .PublishDate | time.Format "2006-01-02" }}
+            <time datetime="{{ $t }}">{{ .PublishDate | time.Format "January 2, 2006" }}</time>
+          </td>
+          <td>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </td>
+          <td>
+            {{ range sort .Params.tags }}
+              <a href="{{ ($.Site.Taxonomies.tags.Get .).Page.RelPermalink }}">{{ . }}</a>
+            {{ end }}
+          </td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+{{ end }}

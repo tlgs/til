@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+    <!-- TODO: add date and tags -->
+  </header>
+
+  <main>
+    {{ .Content }}
+  </main>
+
+  <footer>
+    Content is <a href="https://spdx.org/licenses/CC-BY-SA-4.0.html">CC-BY-SA</a>.
+    Code is <a href="https://spdx.org/licenses/0BSD.html">0BSD</a>.
+  </footer>
+{{ end }}

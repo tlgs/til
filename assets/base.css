@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "National Park";
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("NationalPark-VariableVF.woff2") format(woff2) tech(variations);
+}
+
+@font-face {
+  font-family: "Heal the Web A";
+  font-display: swap;
+  src: url("HealTheWebA-Regular.otf") format(opentype);
+}
+
+:root {
+  --text: #000000;
+  --background: #ffffff;
+  --primary: #ff0000;
+  --secondary: #ffff00;
+  --accent: #0000ff;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--text);
+}
+
+body {
+  max-width: 90ch;
+  width: 100%;
+  margin: 4rem auto auto auto;
+  padding: 0 2rem;
+  line-height: 1.7;
+  font-family: "National Park", sans-serif;
+  font-size: 1rem;
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+/* LINKS */
+a {
+  color: inherit;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: .1rem;
+  text-underline-offset: .2rem;
+  transition: text-decoration-color 1s ease;
+}
+
+a:hover {
+  text-decoration-color: var(--primary);
+  transition: text-decoration-colors 0.5s ease;
+}
+
+/* TABLES */
+table {
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+thead tr {
+  text-align: left;
+  border-bottom: medium solid;
+}
+
+tbody tr {
+  border-bottom: thin solid;
+}
+
+th, td {
+  padding: 0.5rem 2rem;
+}
+
+/* FOOTER */
+footer {
+  margin: 5rem 0 1rem 0;
+  text-align: center;
+  font-size: .9rem;
+}
+
+footer a {
+  text-decoration-color: var(--secondary);
+}
+
+/* HOMEPAGE HEADING */
+#home-heading {
+  margin: 3rem auto;
+  font-family: "Heal the Web A", sans-serif;
+  font-feature-settings: "ss05";
+  font-size: 6rem;
+}
+
+/* TABLES ON LIST PAGES */
+.listing {
+  margin: unset;
+}
+
+.listing tbody tr {
+  border-bottom: unset;
+}
+
+.listing td {
+  padding: 0 1rem;
+  font-size: .9rem;
+}
+
+.listing td:nth-child(1) {
+  text-align: right;
+  vertical-align: middle;
+}
+
+.listing td:nth-child(2) {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.listing td:nth-child(3) a {
+  text-decoration: none;
+  border: thin solid;
+  border-radius: 1rem;
+  padding: .25rem .5rem;
+  transition: background-color 1s ease;
+}
+
+.listing td:nth-child(3) a:hover {
+  background-color: var(--secondary);
+  transition: all .5s ease;
+}
+
+@media (max-width: 768px) {
+  .listing td:nth-of-type(odd) {
+    display: none;
+  }
+}
+
+/* TAG SPAN */
+.tag {
+  font-size: 6rem;
+  color: var(--primary);
+}
