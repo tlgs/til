@@ -4,6 +4,9 @@ title = "til.tlgs"
 capitalizeListTitles = false
 disableKinds = ["sitemap", "RSS"]
 
+markup.highlight.style = "pygments"
+markup.goldmark.extensions.typographer = false
+
 [taxonomies]
   tag = "tags"
 
