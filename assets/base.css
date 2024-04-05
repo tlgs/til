@@ -20,11 +20,14 @@
 }
 
 :root {
-  --text: #000000;
-  --background: #ffffff;
-  --primary: #ff0000;
-  --secondary: #ffff00;
-  --accent: #0000ff;
+  --text: rgb(27, 27, 27);
+  --background: rgb(255, 255, 255);
+  --accent: rgb(0, 50, 160);
+  --primary: rgb(228, 0, 43);
+  --secondary: rgb(245, 220, 0);
+
+  --inline-code: rgba(27, 27, 27, 0.08);
+  --code-block-shadow: rgba(27, 27, 27, 0.6);
 }
 
 *, ::before, ::after {
