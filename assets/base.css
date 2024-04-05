@@ -2,13 +2,13 @@
   font-family: "National Park";
   font-weight: 200 800;
   font-display: swap;
-  src: url("NationalPark-VariableVF.woff2") format(woff2) tech(variations);
+  src: url("fonts/NationalPark-VariableVF.woff2") format(woff2) tech(variations);
 }
 
 @font-face {
   font-family: "Heal the Web A";
   font-display: swap;
-  src: url("HealTheWebA-Regular.otf") format(opentype);
+  src: url("fonts/HealTheWebA-Regular.otf") format(opentype);
 }
 
 :root {
