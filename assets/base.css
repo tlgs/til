@@ -125,7 +125,7 @@ code {
   margin-bottom: 6rem;
   font-family: "Heal the Web A", sans-serif;
   font-size: 10rem;
-  color: var(--secondary);
+  color: var(--background);
   text-shadow: .6rem .3rem var(--accent), -.4rem -.2rem var(--primary);
 }
 
