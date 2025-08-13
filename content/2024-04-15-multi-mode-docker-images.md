@@ -1,13 +1,13 @@
 +++
 title = "How to write multi-mode Docker images"
-description = "How to write basic multi-mode Docker images for maintainability and robustness practices"
+description = "How to write basic multi-mode Docker images for maintainability and robustness"
 tags = ["docker", "bash"]
 +++
 
 If you want to create a single Docker image that can do different things,
 one useful pattern is the "multi-mode" image.
-This practice removes the need two create two different images that will
-essentially have the same build steps and only differ in the running command.
+This practice removes the need to create two different images with
+the same build steps that only differ in the running command.
 
 The concept boils down to **identifying the different run modes
 and mapping them to verbs**.
