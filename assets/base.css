@@ -2,21 +2,20 @@
   font-family: "National Park";
   font-weight: 200 800;
   font-display: swap;
-  src: url("fonts/NationalPark-VariableVF.woff2") format(woff2) tech(variations);
+  src: url("fonts/NationalPark-VariableVF.woff2") format("woff2") tech(variations);
 }
 
 @font-face {
   font-family: "JetBrains Mono";
   font-weight: 100 800;
   font-display: swap;
-  src: local("JetBrains Mono")
-    url("fonts/JetBrainsMono[wght].ttf") format(truetype);
+  src: local("JetBrains Mono"), url("fonts/JetBrainsMono[wght].ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Heal the Web A";
   font-display: swap;
-  src: url("fonts/HealTheWebA-Regular.otf") format(opentype);
+  src: url("fonts/HealTheWebA-Regular.otf") format("opentype");
 }
 
 :root {
