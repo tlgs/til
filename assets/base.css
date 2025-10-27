@@ -112,7 +112,7 @@ code {
   font-size: .9rem;
 }
 
-*:not(pre, td) > code {
+*:not(pre) > code {
   white-space: nowrap;
   font-size: .9rem;
   padding: 0.1rem 0.3rem;

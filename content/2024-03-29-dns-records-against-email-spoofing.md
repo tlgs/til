@@ -7,11 +7,11 @@ tags = ["dns"]
 A domain that doesn't receive or send emails can be used in [email spoofing][1] attacks.
 Domain owners should set a couple of **TXT records** to configure email authentication:
 
-| Name                       | Content                                          |
-| -------------------------- | ------------------------------------------------ |
-| `example.com`              | `v=spf1 -all`                                    |
-| `*._domainkey.example.com` | `v=DKIM1; p=`                                    |
-| `_dmarc.example.com`       | `v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s` |
+| Name                     | Content                                          |
+| ------------------------ | ------------------------------------------------ |
+| example.com              | `v=spf1 -all`                                    |
+| *._domainkey.example.com | `v=DKIM1; p=`                                    |
+| _dmarc.example.com       | `v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s` |
 
 Spotted on ["How to protect domains that do not send email"][2] by Cloudflare.
 
