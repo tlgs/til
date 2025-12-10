@@ -5,7 +5,7 @@ tags = ["llm"]
 +++
 
 I'm just starting to learn to use Claude Code and, like most software,
-it requires some fiddling with settings to have a relatively sane experience.
+it requires some fiddling to have a relatively sane experience.
 This is a short checklist of useful things.
 
 
@@ -15,4 +15,4 @@ This is a short checklist of useful things.
 | `CLAUDE_CONFIG_DIR="${XDG_CONFIG_HOME}"/claude` | Respect the XDG spec                                                    |
 | `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1`    | Disable auto-updates, error reporting, telemetry and the `\bug` command |
 
-Relative to Claude Code version 2.0.28.
+\*Claude Code version 2.0.28
