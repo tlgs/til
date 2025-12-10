@@ -20,12 +20,12 @@
 
 :root {
   --text: rgb(0, 0, 0);
-  --background: rgb(255, 255, 255);
+  --background: rgb(252, 248, 228);
   --accent: rgb(0, 0, 255);
   --primary: rgb(255, 0, 0);
   --secondary: rgb(255, 255, 0);
 
-  --inline-code: rgba(0, 0, 0, 0.08);
+  --inline-code: rgba(0, 0, 0, 0.16);
   --code-block-shadow: rgba(0, 0, 0, 0.6);
 }
 
@@ -124,7 +124,7 @@ code {
   margin-bottom: 6rem;
   font-family: "Heal the Web A", sans-serif;
   font-size: 10rem;
-  color: var(--background);
+  color: rgb(255, 255, 255);
   text-shadow: .6rem .3rem var(--accent), -.4rem -.2rem var(--primary);
 }
 
