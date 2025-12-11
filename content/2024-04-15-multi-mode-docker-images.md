@@ -30,6 +30,9 @@ case $1 in
 esac
 ```
 
+Instead of dummy printing you'll want to use [`exec [command [argument...]]`][5]
+to ensure proper signal handling in containers.
+
 The script is then set as the image's `ENTRYPOINT` like so:
 
 ```Dockerfile
@@ -72,3 +75,4 @@ by Michael Fischer which formally introduced me to the pattern of multi-mode ima
 [2]: https://github.com/dagster-io/dagster/tree/master/examples/deploy_docker
 [3]: https://docs.docker.com/compose/compose-file/05-services/#entrypoint
 [4]: https://aws.amazon.com/blogs/opensource/demystifying-entrypoint-cmd-docker/
+[5]: https://www.man7.org/linux/man-pages/man1/exec.1p.html
