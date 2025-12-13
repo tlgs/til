@@ -1,7 +1,7 @@
 +++
 title = "Writing Parquet timestamps for BigQuery"
 description = "Practical notes on Parquet timestamp encoding from Pandas and how to avoid timezone issues in Google BigQuery."
-tags = ["data engineering", "bigquery", "parquet"]
+tags = ["data engineering", "bigquery"]
 +++
 
 Some things to keep in mind when working with pandas [`DatetimeIndex`][1]
