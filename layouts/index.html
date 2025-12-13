@@ -9,7 +9,7 @@
         <tr>
           <td>
             {{ $t := .PublishDate | time.Format "2006-01-02" }}
-            <time datetime="{{ $t }}">{{ .PublishDate | time.Format "January 2, 2006" }}</time>
+            <time datetime="{{ $t }}">{{ $t }}</time>
           </td>
           <td>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
