@@ -166,7 +166,18 @@ code {
 }
 
 @media (max-width: 768px) {
-  .listing td:nth-of-type(odd) {
+  body::before {
+    content: "Come back when you have a larger screen.";
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    text-align: center;
+    background: var(--background);
+  }
+
+  body > * {
     display: none;
   }
 }
